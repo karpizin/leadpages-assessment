@@ -3,15 +3,7 @@
 ## Setup
 
 1. Clone the repository.
-2. Install dependencies:
-    ```
-    pip install -r requirements.txt
-    ```
-3. Run the script:
-    ```
-    python src/main.py
-    ```
+2. Run: docker build -t animals-api-client .
+3. Run: docker run -d  --network="host" --name apicheck animals-api-client
 
-## Notes
-- This script will fetch all animals from the API, transform their data, and post them in batches to the `/home` endpoint.
-- Handles retries and server errors with exponential backoff.
+4. Please be patient, project executions takes up to couple minutes
