@@ -5,6 +5,7 @@ from utils.transformations import *
 
 def main():
     # Step 1: Fetch all animals
+    print(f"trying to fetch all animals... ")
     animals = fetch_all_animals()
 
 
